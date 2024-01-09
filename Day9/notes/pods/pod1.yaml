@@ -1,0 +1,20 @@
+# set the api version which has support of pod
+apiVersion: v1
+
+# set the kind of object to be created to Pod
+kind: Pod
+
+# metadata about the pod
+metadata:
+  # set the pod name
+  name: mypod
+
+# specification of the pod
+spec:
+  # list of containers to be created inside the pod
+  containers:
+    # name of the container
+    - name: mypod-container
+
+      # image used to create a container inside the pod
+      image: httpd
